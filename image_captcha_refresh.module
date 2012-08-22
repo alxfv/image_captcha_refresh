@@ -36,6 +36,7 @@ function image_captcha_refresh_theme() {
  * @return Data in json format
  */
 function image_captcha_refresh_ajax_refresh($form_id) {
+  $GLOBALS['conf']['cache'] = FALSE;
   $result = array(
     'status' => 0,
     'message' => ''

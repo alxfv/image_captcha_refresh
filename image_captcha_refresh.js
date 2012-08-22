@@ -4,11 +4,13 @@
     attach: function (context) {
       var link = $('#reload-captcha');
       if (link.length > 0) {
+        var date = new Date();
         link.not('.processed').bind('click', function () {
           $(this).addClass('processed');
           // send post query for getting new captcha data
+          var url = this.href + '?' + date.getTime();
           $.get(
-            this.href,
+            url,
             {},
             function (response) {
               if(response.status == 1) {
