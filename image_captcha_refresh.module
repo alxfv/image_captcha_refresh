@@ -105,7 +105,7 @@ function image_captcha_refresh_form_alter(&$form, &$form_state, $form_id) {
  */
 function theme_image_captcha_refresh_link($variables) {
   $output = '<div class="reload-captcha-wrapper">';
-  $output .= l(t('Generate a new captcha'), $variables['url'], array('attributes' => array('id' => 'reload-captcha', 'class' => array('reload-captcha'))));
+  $output .= l(t('Generate a new captcha'), $variables['url'], array('attributes' => array('class' => array('reload-captcha'))));
   $output .= '</div>';
   return $output;
 }
