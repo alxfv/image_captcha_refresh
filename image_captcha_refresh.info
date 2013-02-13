@@ -2,4 +2,4 @@ name = "Image Captcha Refresh"
 description = "Adds link for refreshing image captcha."
 package = "Spam control"
 dependencies[] = image_captcha
-core = 7.x
+core = 6.x

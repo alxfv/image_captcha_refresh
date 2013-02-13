@@ -18,3 +18,8 @@ Author
 ------
 Dmitry Drozdik
 dmitry.drozdik@gmail.com
+
+Drupal 6 porting
+----------------
+Aleksandr Fedorov
+faostb@gmail.com
